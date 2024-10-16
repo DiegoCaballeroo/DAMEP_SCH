@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-
-    <corners android:radius="16dp"/>
-    <solid android:color="@color/black"/>
+    <corners android:radius="16dp"/> <!-- Ajusta el valor para cambiar el radio -->
+    <solid android:color="#FFFFFf"/> <!-- Color de fondo -->
 </shape>

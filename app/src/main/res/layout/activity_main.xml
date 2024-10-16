@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CCF4F9"
     tools:context=".MainActivity">
 
 
@@ -13,25 +14,25 @@
         android:id="@+id/linearLayout2"
         android:layout_width="335dp"
         android:layout_height="444dp"
-        android:layout_marginTop="68dp"
+        android:background="@drawable/rounded_background"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <TextView
             android:id="@+id/bienvenido"
             android:layout_width="172dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:text="@string/bienvenida"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/documentEditText"
-            android:layout_width="326dp"
+            android:layout_width="280dp"
+            android:background="@drawable/rounded_background3"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="32dp"
@@ -42,12 +43,13 @@
 
         <EditText
             android:id="@+id/passwordEditText"
-            android:layout_width="322dp"
+            android:layout_width="280dp"
+            android:background="@drawable/rounded_background3"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/rounded_edittext_background"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="12dp" />
@@ -59,20 +61,23 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/primary_button"
             android:text="@string/ingresar"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            app:cornerRadius="20dp" />
 
         <TextView
             android:id="@+id/olvidastecontra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/olvidastecontra"
+            android:text="@string/texto_subrayado"
+            android:textColor="#0177CA"
             android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginTop="16dp"
             android:text="@string/sincuenta" />
 
@@ -81,9 +86,10 @@
             android:layout_width="271dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/secondary_button"
+            android:backgroundTint="#499FA6"
             android:text="@string/crearcuenta"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            app:cornerRadius="20dp" />
 
     </LinearLayout>
 
@@ -91,7 +97,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="362dp"
         android:layout_height="59dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background2"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,17 +113,19 @@
             android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/consulta" />
+            android:text="@string/consulta"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="362dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background2"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
@@ -128,9 +137,21 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/consult2"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="37dp"
             tools:layout_editor_absoluteY="608dp" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_miconsulta" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
