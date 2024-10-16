@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DAMEP_SCH</string>
+    <string name="bienvenida">Bienvenido(a)</string>
+    <string name="docid">Documento de identidadd</string>
+    <string name="password">Contraseña</string>
+    <string name="consultas">Consultas al 3500800 Opción 2 para Lima y Callao</string>
+    <string name="sincuenta">¿Aun no tienes cuenta EsSalud Mi Consulta?</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="crearcuenta">Crear cuenta</string>
+    <string name="olvidastecontra">¿Olvidaste tu contraseña?</string>
+    <string name="consulta">Consultas al 3500800 Opción 2 para Lima y Callao</string>
+    <string name="consult2">Provincias a EsSalud en Línea de la Red de su región (http://www.essalud.gob.pe/essalud-en-linea)</string>
 </resources>
